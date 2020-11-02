@@ -10,5 +10,16 @@
             </PersistentString>
          </PersistentStrings>
       </ContextState>
+      <ContextState
+         contextName = "MealRecipeIngredientsView.init(mealRecipeDetailViewModel:):MealRecipeDetailView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "mealRecipeIngredientsArray">
+            </PersistentString>
+            <PersistentString
+               value = "self.mealRecipeDetailViewModel.mealRecipeIngredientsArray">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
    </ContextStates>
 </VariablesViewState>

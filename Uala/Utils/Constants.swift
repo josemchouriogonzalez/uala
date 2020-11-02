@@ -18,8 +18,8 @@ struct Constants {
     
     struct ErrorMessage {
         static let Error = "Error"
-        static let DefaultErrorMessage = "La operación no pudo ser completada. Por favor intente nuevamente."
-        static let NoInternetConnection = "Por favor chequee su conexión a Internet."
+        static let DefaultErrorMessage = "The process could not be completed. Please try later."
+        static let NoInternetConnection = "Please check your Internet connection."
     }
 
     enum HTTPHeaderField: String {
@@ -39,5 +39,6 @@ struct Constants {
     
     enum imageName: String {
         case uala = "icUala"
+        case resultsNotFound = "icResultsNotFound"
     }
 }

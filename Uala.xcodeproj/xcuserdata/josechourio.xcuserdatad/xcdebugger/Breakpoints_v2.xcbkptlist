@@ -7,16 +7,32 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "F36BE78F-C5B9-4885-AEF4-D2B8978BE055"
+            uuid = "63822D0D-7D7C-4AE6-ADAB-C3FFEB2AE08C"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Uala/MealRecipe/ViewModels/MealRecipeViewModel.swift"
+            filePath = "Uala/MealRecipe/ViewModels/MealRecipeSearchViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "87"
-            endingLineNumber = "87"
-            landmarkName = "getRandonMeal()"
+            startingLineNumber = "88"
+            endingLineNumber = "88"
+            landmarkName = "getMealRecipes()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "05796AC3-58DB-4ADD-A863-DA7DD615393E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Uala/MealRecipe/ViewModels/MealRecipeSearchViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "89"
+            endingLineNumber = "89"
+            landmarkName = "getMealRecipes()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

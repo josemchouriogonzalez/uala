@@ -9,9 +9,9 @@
 import SwiftUI
 
 struct InitialView: View {
-    let timer = Timer.publish(every: 1.0, on: .main, in: .common).autoconnect()
-    @State var timerLimit : Float = 2.0
-    @State var currentSeconds: Float = 0.0
+    private let timer = Timer.publish(every: 1.0, on: .main, in: .common).autoconnect()
+    @State private var timerLimit : Float = 0.0
+    @State private var currentSeconds: Float = 0.0
     @State private var shouldNavigateToNextView = false
     @State private var isNavigationBarHidden = true
     
@@ -22,7 +22,7 @@ struct InitialView: View {
                     .resizable()
                     .frame(width: 160, height: 160)
                 
-                NavigationLink(destination: MealRecipeView(isNavigationBarHidden: self.$isNavigationBarHidden), isActive: self.$shouldNavigateToNextView) {
+                NavigationLink(destination: MealRecipeSearchView(isNavigationBarHidden: self.$isNavigationBarHidden), isActive: self.$shouldNavigateToNextView) {
                     Text("")
                 }.hidden()
             }.navigationBarTitle("")

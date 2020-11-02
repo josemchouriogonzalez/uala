@@ -40,12 +40,7 @@ enum HTTPMethod: String {
     case patch = "PATCH"
 }
 
-enum DataTaskError: Error {
-    case invalidResponse, rateLimitted, serverBusy
-}
-
 struct NetworkService: NetworkServiceProviding {
-    
     func execute<T>(_ requestProvider: RequestProviding) -> AnyPublisher<T, Error> where T : Decodable {
         return URLSession.shared.dataTaskPublisher(for: requestProvider.urlRequest)
             .tryMap { data, response in

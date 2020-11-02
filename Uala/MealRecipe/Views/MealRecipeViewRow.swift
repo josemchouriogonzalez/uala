@@ -10,13 +10,13 @@ import SwiftUI
 import SDWebImageSwiftUI
 
 struct MealRecipeViewRow: View {
-    var mealRecipe: MealRecipe
+    let mealRecipeViewModel: MealRecipeViewModel
     
     var body: some View {
         HStack(alignment: .center) {
             ZStack {
-                if(self.mealRecipe.imageUrl != nil) {
-                    WebImage(url: URL(string: (self.mealRecipe.imageUrl)!))
+                if(self.mealRecipeViewModel.mealRecipe.imageUrl != nil) {
+                    WebImage(url: URL(string: (self.mealRecipeViewModel.mealRecipe.imageUrl)!))
                         .resizable()
                         .indicator(.activity)
                         .transition(.fade(duration: 0.5))
@@ -31,11 +31,11 @@ struct MealRecipeViewRow: View {
             }
             
             VStack(alignment: .leading) {
-                Text(self.mealRecipe.name ?? "")
-                    .font(.system(size: 13, weight: .semibold))
+                Text(self.mealRecipeViewModel.mealRecipe.name ?? "")
+                    .font(.system(size: 14, weight: .bold))
                     .foregroundColor(.blue)
                 
-                Text(self.mealRecipe.category ?? "")
+                Text(self.mealRecipeViewModel.mealRecipe.category ?? "")
                     .font(.system(size: 12, weight: .medium))
                     .foregroundColor(.gray)
             }
